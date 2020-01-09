@@ -20,11 +20,6 @@ jobs:
             ${{ runner.OS }}-build-
             ${{ runner.OS }}-
 
-      - uses: actions/checkout@v1
-        with:
-          repository: movillnet/movill-router
-          token: ${{ secrets.ACCESS_TOKEN }}
-
 #      - name: Install Private Repository    # 의존 파일 설치
 #        run: yarn add https://kev-in-movill:4f88929e238df35b4883a0e12ae08bb1c408ce07@github.com/movillnet/movill-router.git#master
 #        env:
