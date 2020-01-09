@@ -26,6 +26,8 @@ jobs:
 #          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Install Dependencies
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn install
 
       - name: Build                   # React Build

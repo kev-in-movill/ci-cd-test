@@ -1,3 +1,6 @@
 [submodule "movill-router"]
 	path = movill-router
 	url = https://github.com/movillnet/movill-router
+[submodule "movill-ui"]
+	path = movill-ui
+	url = https://github.com/movillnet/movill-ui
