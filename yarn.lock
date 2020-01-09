@@ -6741,18 +6741,18 @@ move-concurrently@^1.0.1:
     rimraf "^2.5.4"
     run-queue "^1.0.3"
 
-"movill-router@git+https://kev-in-movill:4f88929e238df35b4883a0e12ae08bb1c408ce07@github.com/movillnet/movill-router.git#master":
+"movill-router@https://github.com/movillnet/movill-router.git":
   version "0.3.3"
-  resolved "git+https://kev-in-movill:4f88929e238df35b4883a0e12ae08bb1c408ce07@github.com/movillnet/movill-router.git#b5d54ba6effb8b917517df8bd26d40807b8d3e84"
+  resolved "https://github.com/movillnet/movill-router.git#b5d54ba6effb8b917517df8bd26d40807b8d3e84"
   dependencies:
     axios "^0.19.0"
     form-data "^2.5.1"
     node-blob "^0.0.2"
     query-string "^6.8.3"
 
-"movill-ui@git+https://kev-in-movill:4f88929e238df35b4883a0e12ae08bb1c408ce07@github.com/movillnet/movill-ui.git#master":
+"movill-ui@https://github.com/movillnet/movill-ui.git":
   version "3.8.5"
-  resolved "git+https://kev-in-movill:4f88929e238df35b4883a0e12ae08bb1c408ce07@github.com/movillnet/movill-ui.git#f6fa7bdbcc0e2da96791ed08945c832c9a3e042b"
+  resolved "https://github.com/movillnet/movill-ui.git#f6fa7bdbcc0e2da96791ed08945c832c9a3e042b"
   dependencies:
     date-fns "^2.0.0-beta.3"
     react "16.8.6"
