@@ -11,14 +11,14 @@ jobs:
       - name: Checkout source code.   # 레포지토리 체크아웃
         uses: actions/checkout@master
 
-#      - name: Cache node modules      # node modules 캐싱
-#        uses: actions/cache@v1
-#        with:
-#          path: node_modules
-#          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
-#          restore-keys: |
-#            ${{ runner.OS }}-build-
-#            ${{ runner.OS }}-
+      - name: Cache node modules      # node modules 캐싱
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
 
 #      - name: Install Private Repository    # 의존 파일 설치
 #        run: yarn add https://kev-in-movill:4f88929e238df35b4883a0e12ae08bb1c408ce07@github.com/movillnet/movill-router.git#master
@@ -26,7 +26,10 @@ jobs:
 #          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Install Dependencies
-        run: yarn install
+        env:
+        run: |
+          git config --global url."https://4f88929e238df35b4883a0e12ae08bb1c408ce07:x-oauth-basic@github.com/"
+          yarn install
 
       - name: Build                   # React Build
         run: yarn build
