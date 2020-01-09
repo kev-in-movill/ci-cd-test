@@ -28,7 +28,7 @@ jobs:
       - name: Install Dependencies
         env:
         run: |
-          git config --global url."https://4f88929e238df35b4883a0e12ae08bb1c408ce07:x-oauth-basic@github.com/"
+          git config --global url."https://4f88929e238df35b4883a0e12ae08bb1c408ce07:x-oauth-basic@github.com/".insteadOf git@github.com:
           yarn install
 
       - name: Build                   # React Build
