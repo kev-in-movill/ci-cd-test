@@ -1066,10 +1066,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@movillnet/movill-logger@0.0.10":
-  version "0.0.10"
-  resolved "https://npm.pkg.github.com/download/@movillnet/movill-logger/0.0.10/d8742ba15f2d016f0a6e75054662ba2f072bf9604a48c452c109934b9aadeed6#18e6d0efc3c2eb5d38e7fabc97cfdfda82083646"
-  integrity sha512-OQBXpNbKtJd5HooLhacwT4LMo5QR9jgF76t8oQQE/c/nQaUbv2w+TXoeycycPgbq/Tu8Qkoh4/t7P5Bta+ozWQ==
+"@movillnet/movill-logger@0.0.11":
+  version "0.0.11"
+  resolved "https://npm.pkg.github.com/download/@movillnet/movill-logger/0.0.11/49194083224654a62573c662e93479a0a34195c352291d8a90df51b365a67fa6#774ede775d634f5ac8a5f3fe65dcb9361860ed9b"
+  integrity sha512-/dcgDRpf9RXHV7pwK6t9q1GEzWdXDWczkKOkcuG7TQI62CGg5LsFi3G5/xiXf1IELnTfuSSrwDz7qKpIgKJK+g==
   dependencies:
     "@sentry/browser" "^5.9.0"
     "@sentry/electron" "^1.0.0"
