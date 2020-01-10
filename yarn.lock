@@ -1066,7 +1066,7 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@movillnet/movill-logger@^0.0.10":
+"@movillnet/movill-logger@0.0.10":
   version "0.0.10"
   resolved "https://npm.pkg.github.com/download/@movillnet/movill-logger/0.0.10/d8742ba15f2d016f0a6e75054662ba2f072bf9604a48c452c109934b9aadeed6#18e6d0efc3c2eb5d38e7fabc97cfdfda82083646"
   integrity sha512-OQBXpNbKtJd5HooLhacwT4LMo5QR9jgF76t8oQQE/c/nQaUbv2w+TXoeycycPgbq/Tu8Qkoh4/t7P5Bta+ozWQ==
