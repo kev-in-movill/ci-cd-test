@@ -27,13 +27,11 @@ jobs:
           scope: '@movillnet'
 
       - run: npm ci
-          env:
-            NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Install Dependencies
         run: yarn install
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.YARN_TOKEN }}
 
       - name: Build
         run: yarn build
