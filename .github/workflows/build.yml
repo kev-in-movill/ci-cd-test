@@ -11,21 +11,31 @@ jobs:
       - name: Checkout source code.   # 레포지토리 체크아웃
         uses: actions/checkout@master
 
-      - name: Cache node modules      # node modules 캐싱
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.OS }}-build-
-            ${{ runner.OS }}-
+#      - name: Cache node modules      # node modules 캐싱
+#        uses: actions/cache@v1
+#        with:
+#          path: node_modules
+#          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
+#          restore-keys: |
+#            ${{ runner.OS }}-build-
+#            ${{ runner.OS }}-
+
+      - uses: actions/setup-node@v1
+          with:
+            node-version: 10
+            registry-url: https://npm.pkg.github.com/
+            scope: '@movillnet'
+
+      - run: npm ci
+          env:
+            NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Install Dependencies
         run: yarn install
         env:
           NODE_AUTH_TOKEN: ${{ secrets.YARN_TOKEN }}
 
-      - name: Build                   # React Build
+      - name: Build
         run: yarn build
 
       - name: Deploy                  # S3에 배포하기
