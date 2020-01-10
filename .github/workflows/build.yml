@@ -1,4 +1,4 @@
-name: React build
+name: Test Build
 on:
   push:                               # master Branch에서 push 이벤트가 일어났을 때만 실행
     branches:
@@ -24,7 +24,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn install
-
 
       - name: Build                   # React Build
         run: yarn build
