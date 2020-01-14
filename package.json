@@ -13,7 +13,9 @@
     "url": "https://github.com/kev-in-movill/ci-cd-test.git"
   },
   "dependencies": {
-    "@movillnet/movill-logger": "0.0.11",
+    "@movillnet/movill-logger": "^0.0.13",
+    "@movillnet/movill-router": "^0.3.8",
+    "@movillnet/ui": "^3.8.10",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
